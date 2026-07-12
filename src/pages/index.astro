@@ -110,10 +110,59 @@ const projects = [
 
       <section class="section contact" id="contact">
         <p class="eyebrow">Contact</p>
+
         <h2>Let’s discuss technical communication and product quality.</h2>
-        <p>
-          Add your email address or LinkedIn profile here when you are ready.
+
+        <p class="contact-introduction">
+          You can reach me by email or connect with me on LinkedIn.
         </p>
+
+        <div class="contact-links">
+          <a
+            class="contact-badge"
+            href="mailto:d.dianepark@gmail.com"
+            aria-label="Email Diane Park"
+          >
+            <svg
+              aria-hidden="true"
+              viewBox="0 0 24 24"
+              width="20"
+              height="20"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.8"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <rect x="3" y="5" width="18" height="14" rx="2"></rect>
+              <path d="m3 7 9 6 9-6"></path>
+            </svg>
+
+            <span>d.dianepark@gmail.com</span>
+          </a>
+
+          <a
+            class="contact-badge"
+            href="https://www.linkedin.com/in/dianedpark/"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="View Diane Park’s LinkedIn profile"
+          >
+            <svg
+              aria-hidden="true"
+              viewBox="0 0 24 24"
+              width="20"
+              height="20"
+              fill="currentColor"
+            >
+              <path
+                d="M6.5 8.3H3.2V19h3.3V8.3ZM4.85 3A1.92 1.92 0 1 0 4.85 6.84 1.92 1.92 0 0 0 4.85 3ZM19.8 12.86c0-3.22-1.72-4.72-4.02-4.72-1.85 0-2.68 1.02-3.15 1.74V8.3H9.34V19h3.29v-5.3c0-1.4.27-2.77 2.02-2.77 1.72 0 1.74 1.61 1.74 2.86V19h3.3l.11-6.14Z"
+              />
+            </svg>
+
+            <span>LinkedIn</span>
+          </a>
+        </div>
       </section>
     </main>
 
@@ -288,6 +337,40 @@ const projects = [
 
   .contact {
     max-width: 800px;
+  }
+
+  .contact-introduction {
+    margin-bottom: 28px;
+    font-size: 1.1rem;
+  }
+
+  .contact-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 14px;
+  }
+
+  .contact-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    padding: 12px 16px;
+    border: 1px solid #181818;
+    text-decoration: none;
+    transition:
+      background-color 180ms ease,
+      color 180ms ease,
+      transform 180ms ease;
+  }
+
+  .contact-badge:hover {
+    background: #181818;
+    color: #f7f6f2;
+    transform: translateY(-1px);
+  }
+
+  .contact-badge svg {
+    flex-shrink: 0;
   }
 
   footer {
